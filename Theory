@@ -1,0 +1,26 @@
+# http://www.cs.columbia.edu/~amueller/comsw4995s18/schedule/
+
+# Logistic Regression
+Logistic regression is an instance of classification technique that you can use to predict a qualitative response. 
+More specifically, logistic regression models the probability that response belongs to a particular category.
+
+# That means that, if you are trying to do response classification, where the response falls into one of the
+# two categories, such as male or female, we'll use logistic regression models to estimate the probability that gender
+# belongs to a particular category
+
+# Binomial Logistic Regression 
+ The variable to predict (response) is binary ("1" or "0"), however, logistic regression can also be used
+ to predict a dependent variable which can assume more than 2 values.
+
+# Multinomial Logistic Regression
+# MLR model is a simple extension of the binomial logistic regression model, which you use
+# when the exploratory variable has more than two nominal (unordered) categories.
+
+#In multinomial logistic regression, the exploratory variable is dummy coded into multiple 1/0 variables.
+3There is a variable for all categories but one, so if there are M categories, there will be M−1 dummy variables.
+Each category’s dummy variable has a value of 1 for its category and a 0 for all others. One category, the reference category, 
+doesn’t need its own dummy variable, as it is uniquely identified by all the other variables being 0.
+
+The mulitnomial logistic regression then estimates a separate binary logistic regression model for each of those dummy variables. 
+The result is M−1 binary logistic regression models. Each model conveys the effect of predictors
+on the probability of success in that category, in comparison to the reference category.
